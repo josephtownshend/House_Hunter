@@ -1,6 +1,6 @@
 # Househunter
 
-A property search backend built using Elixir, Phoenix & GraphQL
+A backend property search app built using Elixir, Phoenix & GraphQL
 
 ## Set Up
 
