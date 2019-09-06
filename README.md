@@ -8,8 +8,7 @@
 |__|__| \___/  \__,_| \___||_____|    |__|__| \__,_||__|__|  |__|  |_____||__|\_|
 ```                                                                              
                                                                             
-
-A backend property search app built using Elixir, Phoenix & GraphQL
+A backend property search app built using Elixir, Phoenix, GraphQL & PostgreSQL.
 
 ## Set Up
 
