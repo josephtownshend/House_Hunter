@@ -1,19 +1,41 @@
 # Househunter
 
-To start your Phoenix server:
+A property search backend built using Elixir, Phoenix & GraphQL
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+## Set Up
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+1. Clone this repo using `$ git clone git@github.com:josephtownshend/House_Hunter.git`
+2. Make sure to change username / password in `devs.exs` file to your computer username and password.
+3. `$ mix ecto.create` to create db
+4. In order to migrate db use `$ mix ecto.migrate --step 1` this runs the 1st step and stops it from erroring.
+5. Add more properties to the db in `priv/repo/seeds.exs` then load seed data with `$ mix run priv/repo/seeds.exs`
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## To start your Phoenix server:
 
-## Learn more
+1. Install dependencies with `mix deps.get`
+2. Create and migrate your database with `mix ecto.setup`
+3. Start Phoenix endpoint with `mix phx.server`
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Now you can visit [`localhost:4000/graphql`](http://localhost:4000/graphiql) from your browser.
+
+You can search the listings database with these queries...
+```
+query {
+  property(id: 2) {
+    id
+    location
+    type
+    bedrooms
+  }
+}
+```
+```
+query {
+  properties {
+    id
+    location
+    type
+    bedrooms
+  }
+}
+```
