@@ -13,11 +13,16 @@ A backend property search app built using Elixir, Phoenix & GraphQL
 
 ## Set Up
 
-1. Clone this repo using `$ git clone git@github.com:josephtownshend/House_Hunter.git`
+1. Clone this repo using 
+* `$ git clone git@github.com:josephtownshend/House_Hunter.git`
 2. Make sure to change username / password in `devs.exs` file to your computer username and password.
-3. `$ mix ecto.create` to create db
-4. In order to migrate db use `$ mix ecto.migrate --step 1` this runs the 1st step and stops it from erroring.
-5. Add more properties to the db in `priv/repo/seeds.exs` then load seed data with `$ mix run priv/repo/seeds.exs`
+3. To create db run
+* `$ mix ecto.create`
+4. In order to migrate db use...this runs the 1st step and stops it from erroring.
+* `$ mix ecto.create`
+5. Add more properties to the db in `priv/repo/seeds.exs` then load seed data with.
+* `$ mix run priv/repo/seeds.exs`
+
 
 ## To start your Phoenix server:
 
