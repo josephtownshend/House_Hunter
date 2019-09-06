@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :househunter, Househunter.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "josephtownshend",
+  password: "wildboy",
   database: "househunter_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
