@@ -5,7 +5,14 @@ defmodule HousehunterWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", HousehunterWeb do
+  scope "/" do
     pipe_through :api
+
+    forward "/api", Absinthe.Plug,
+      schema: HousehunterWeb.Schema.Schema
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL,
+      schema: HousehunterWeb.Schema.Schema,
+      interface: :simple
   end
 end
