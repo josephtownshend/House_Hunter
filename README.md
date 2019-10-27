@@ -9,6 +9,7 @@
 ```                                                                              
                                                                             
 A backend property search app built using Elixir, Phoenix, GraphQL & PostgreSQL.
+This project is my version of a tutorial by The Pragmatic Studio.
 
 ## Set Up
 
